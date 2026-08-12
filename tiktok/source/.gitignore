@@ -1,0 +1,7 @@
+node_modules/
+frames/
+out/
+audio/
+logs/
+cfg/
+manifest.json

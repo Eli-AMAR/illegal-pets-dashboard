@@ -1,0 +1,263 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+  @font-face { font-family: 'Archivo Black'; font-style: normal; font-weight: 400; src: url(fonts/ArchivoBlack-400.woff2) format('woff2'); }
+  @font-face { font-family: 'Inter'; font-style: normal; font-weight: 600; src: url(fonts/Inter-600.woff2) format('woff2'); }
+  @font-face { font-family: 'Inter'; font-style: normal; font-weight: 800; src: url(fonts/Inter-800.woff2) format('woff2'); }
+  @font-face { font-family: 'Inter'; font-style: normal; font-weight: 900; src: url(fonts/Inter-900.woff2) format('woff2'); }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { width: 1080px; height: 1920px; overflow: hidden; background: #000; }
+  #stage { position: absolute; inset: 0; overflow: hidden;
+    background: linear-gradient(160deg, var(--bg1) 0%, var(--bg2) 55%, var(--bg3) 100%); }
+
+  .blob { position: absolute; width: 1300px; height: 1300px; border-radius: 50%; will-change: transform; }
+  .b1 { background: radial-gradient(circle closest-side, var(--blob1), transparent 68%); opacity: .55; }
+  .b2 { background: radial-gradient(circle closest-side, var(--blob2), transparent 66%); opacity: .45; }
+
+  #glyphs { position: absolute; inset: 0; }
+
+  #vignette { position: absolute; inset: 0;
+    background: radial-gradient(ellipse 90% 72% at 50% 44%, transparent 55%, rgba(0,0,0,.52) 100%); }
+
+  #progress { position: absolute; top: 0; left: 0; right: 0; height: 10px; background: rgba(255,255,255,.10); }
+  #progressFill { height: 100%; width: 0%; background: var(--accent); border-radius: 0 6px 6px 0; }
+
+  #kicker { position: absolute; top: 172px; left: 50%; transform: translateX(-50%);
+    font: 600 30px/1 'Inter'; letter-spacing: .34em; text-indent: .34em; color: rgba(255,255,255,.82);
+    padding: 20px 38px; border: 2px solid rgba(255,255,255,.22); border-radius: 999px;
+    background: rgba(255,255,255,.055); white-space: nowrap; }
+
+  #sceneRoot { position: absolute; inset: 0; }
+  .scene { position: absolute; left: 50%; top: 47%; transform: translate(-50%,-50%);
+    width: 900px; display: none; flex-direction: column; align-items: center; gap: 34px; text-align: center; }
+  .scene.on { display: flex; }
+
+  .line { font-family: 'Archivo Black'; color: #fff; line-height: 1.08; will-change: transform, opacity;
+    text-shadow: 0 6px 40px rgba(0,0,0,.45); }
+  .em { color: var(--accent); }
+  .scene.hook .em, .scene.cta .em { color: var(--emInk); background: var(--accent); padding: .02em .14em;
+    border-radius: .12em; box-decoration-break: clone; -webkit-box-decoration-break: clone; text-shadow: none; }
+
+  .card { font-family: 'Inter'; font-weight: 800; color: #fff; text-align: left; width: 100%;
+    background: rgba(255,255,255,.075); border-left: 12px solid var(--accent);
+    border-radius: 26px; padding: 34px 40px; line-height: 1.22; will-change: transform, opacity;
+    box-shadow: 0 18px 50px rgba(0,0,0,.30); }
+  .card .em { color: var(--accent); background: none; padding: 0; }
+
+  .badge { font-family: 'Archivo Black'; color: #fff; text-align: center;
+    background: linear-gradient(120deg, rgba(255,255,255,.10), rgba(255,255,255,.035));
+    border: 3px solid var(--gold); border-radius: 999px; padding: 30px 58px; line-height: 1.05;
+    will-change: transform, opacity; box-shadow: 0 0 60px rgba(0,0,0,.28); white-space: nowrap; }
+  .badge .em { color: var(--gold); background: none; padding: 0; }
+
+  .pill { font-family: 'Archivo Black'; color: var(--emInk); background: var(--accent);
+    border-radius: 999px; padding: 42px 66px; line-height: 1.05; will-change: transform, opacity;
+    box-shadow: 0 0 90px var(--glow), 0 24px 60px rgba(0,0,0,.35); white-space: nowrap; }
+  .pill .em { color: var(--emInk); background: none; padding: 0; }
+</style>
+</head>
+<body>
+<div id="stage">
+  <div class="blob b1"></div>
+  <div class="blob b2"></div>
+  <canvas id="glyphs" width="1080" height="1920"></canvas>
+  <div id="vignette"></div>
+  <div id="sceneRoot"></div>
+  <div id="kicker">COURS PARTICULIERS · MATHS</div>
+  <div id="progress"><div id="progressFill"></div></div>
+</div>
+<script>
+'use strict';
+/* Deterministic kinetic-typography engine: window.INIT(config) builds the DOM,
+   window.seek(ms) renders the exact state for time ms. No free-running animation. */
+
+const $ = s => document.querySelector(s);
+const clamp01 = x => Math.max(0, Math.min(1, x));
+const lerp = (a, b, p) => a + (b - a) * p;
+const easeOutCubic = p => 1 - Math.pow(1 - p, 3);
+const easeOutQuint = p => 1 - Math.pow(1 - p, 5);
+const easeOutBack = (p, o = 1.55) => 1 + (o + 1) * Math.pow(p - 1, 3) + o * Math.pow(p - 1, 2);
+
+// Seeded PRNG (mulberry32) so every frame is reproducible.
+function rng(seed) { let a = seed >>> 0; return () => {
+  a |= 0; a = (a + 0x6D2B79F5) | 0;
+  let t = Math.imul(a ^ (a >>> 15), 1 | a);
+  t = (t + Math.imul(t ^ (t >>> 7), 61 | t)) ^ t;
+  return ((t ^ (t >>> 14)) >>> 0) / 4294967296; }; }
+
+let CFG = null, SC = [], TOTAL = 0, GL = [];
+const GLYPH_CHARS = ['∫','Σ','π','√','∞','θ','ƒ','Δ','λ','±','÷','≥','α','∂','ℝ','φ'];
+
+function parseEm(text) { // **word** -> accent span
+  return text.replace(/\*\*(.+?)\*\*/g, '<span class="em">$1</span>');
+}
+
+function fitLine(el, maxW) {
+  let size = parseFloat(el.style.fontSize);
+  el.style.whiteSpace = 'nowrap';
+  for (let i = 0; i < 40 && el.scrollWidth > maxW; i++) { size *= 0.955; el.style.fontSize = size + 'px'; }
+  if (el.scrollWidth > maxW) el.style.whiteSpace = 'normal';
+}
+
+window.INIT = function (cfg) {
+  CFG = cfg;
+  const st = document.documentElement.style;
+  for (const [k, v] of Object.entries(cfg.palette)) st.setProperty('--' + k, v);
+  if (cfg.kicker) $('#kicker').textContent = cfg.kicker;
+
+  const root = $('#sceneRoot');
+  root.innerHTML = '';
+  let t0 = 0;
+  SC = cfg.scenes.map((s, si) => {
+    const el = document.createElement('div');
+    el.className = 'scene ' + s.style;
+    // In CTA scenes the pill is the line that carries the DM ask.
+    let pillIdx = -1;
+    if (s.style === 'cta') {
+      pillIdx = s.lines.findIndex(l => /📩|\bMP\b|\bDM\b/i.test(l));
+      if (pillIdx < 0) pillIdx = s.lines.length - 1;
+    }
+    const items = s.lines.map((raw, li) => {
+      const isPill = li === pillIdx;
+      const d = document.createElement('div');
+      d.className = s.style === 'list' ? 'card' : s.style === 'credentials' ? 'badge' : isPill ? 'pill' : 'line';
+      d.innerHTML = parseEm(raw);
+      const plain = raw.replace(/\*\*/g, '');
+      let base;
+      if (d.className === 'card') base = 56;
+      else if (d.className === 'badge') base = Math.min(72, 150 - 3.4 * plain.length);
+      else if (d.className === 'pill') base = Math.min(84, 170 - 3.4 * plain.length);
+      else {
+        base = Math.max(66, Math.min(126, 172 - 3.6 * plain.length));
+        if (s.style === 'hook') base *= 1.1;
+        if (s.style === 'cta') base = Math.min(base, 76); // support lines stay under the pill
+      }
+      d.style.fontSize = base + 'px';
+      el.appendChild(d);
+      return d;
+    });
+    root.appendChild(el);
+    const scene = { el, items, style: s.style, start: t0, dur: s.duration_s * 1000, idx: si };
+    t0 += scene.dur;
+    return scene;
+  });
+  TOTAL = t0;
+
+  // Fit text after DOM insertion (fonts must already be loaded by the caller).
+  for (const sc of SC) {
+    sc.el.classList.add('on');
+    for (const it of sc.items) fitLine(it, it.classList.contains('card') ? 900 : 920);
+    sc.el.classList.remove('on');
+  }
+
+  // Floating math glyphs, seeded per video.
+  const r = rng(cfg.seed || 7);
+  GL = Array.from({ length: 15 }, (_, i) => ({
+    ch: GLYPH_CHARS[Math.floor(r() * GLYPH_CHARS.length)],
+    x: r() * 1080, y: r() * 1920, size: 60 + r() * 190,
+    speed: 14 + r() * 26, wob: 14 + r() * 26, wf: 0.2 + r() * 0.5,
+    rot: (r() - 0.5) * 0.6, rs: (r() - 0.5) * 0.06,
+    alpha: 0.045 + r() * 0.075, outline: r() < 0.3, phase: r() * Math.PI * 2,
+  }));
+  return TOTAL;
+};
+
+function drawGlyphs(t) {
+  const cv = $('#glyphs'), ctx = cv.getContext('2d');
+  ctx.clearRect(0, 0, 1080, 1920);
+  for (const g of GL) {
+    const y = ((g.y - g.speed * t / 1000) % 2200 + 2200) % 2200 - 140;
+    const x = g.x + Math.sin(t / 1000 * g.wf + g.phase) * g.wob;
+    ctx.save();
+    ctx.translate(x, y);
+    ctx.rotate(g.rot + g.rs * t / 1000);
+    ctx.font = `400 ${g.size}px 'Archivo Black'`;
+    ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
+    if (g.outline) {
+      ctx.strokeStyle = `rgba(255,255,255,${g.alpha * 1.5})`; ctx.lineWidth = 2.5; ctx.strokeText(g.ch, 0, 0);
+    } else {
+      ctx.fillStyle = `rgba(255,255,255,${g.alpha})`; ctx.fillText(g.ch, 0, 0);
+    }
+    ctx.restore();
+  }
+}
+
+function styleItem(sc, it, i, tl) {
+  const style = sc.style;
+  const isPill = it.classList.contains('pill');
+  let t0, d, enter;
+  if (style === 'list' || style === 'credentials') { t0 = 110 + i * 270; d = 420; }
+  else { t0 = 80 + i * 150; d = 400; }
+  const p = clamp01((tl - t0) / d);
+  it.style.opacity = Math.min(1, p * 2.2).toFixed(3);
+
+  if (style === 'list') {
+    const e = easeOutQuint(p);
+    const from = (i % 2 ? 1 : -1) * 110;
+    enter = `translateX(${(1 - e) * from}px)`;
+  } else if (style === 'credentials') {
+    const e = easeOutQuint(p);
+    const sc0 = 1.45 - 0.45 * e;
+    const rot = (i % 2 ? 1 : -1) * (1 - e) * 5 + (i % 2 ? -0.8 : 0.8);
+    enter = `scale(${sc0}) rotate(${rot}deg)`;
+  } else if (style === 'hook') {
+    const e = easeOutBack(p, 1.8);
+    enter = `scale(${1.22 - 0.22 * e}) translateY(${(1 - e) * 30}px)`;
+  } else {
+    const e = easeOutBack(p);
+    enter = `translateY(${(1 - e) * 64}px) scale(${0.92 + 0.08 * e})`;
+  }
+  if (isPill && p >= 1) {
+    const pulse = 1 + 0.032 * Math.sin((tl - t0 - d) / 850 * Math.PI * 2);
+    enter += ` scale(${pulse})`;
+  }
+  it.style.transform = enter;
+}
+
+window.seek = function (ms) {
+  const t = Math.max(0, Math.min(ms, TOTAL - 1));
+
+  // Background drift
+  const b1 = $('.b1'), b2 = $('.b2');
+  b1.style.transform = `translate(${-420 + Math.sin(t / 9000 * Math.PI * 2) * 90}px, ${-380 + Math.cos(t / 11000 * Math.PI * 2) * 110}px)`;
+  b2.style.transform = `translate(${420 + Math.cos(t / 10000 * Math.PI * 2) * 100}px, ${1000 + Math.sin(t / 8000 * Math.PI * 2) * 90}px)`;
+  drawGlyphs(t);
+
+  $('#progressFill').style.width = (t / TOTAL * 100).toFixed(2) + '%';
+  $('#kicker').style.opacity = clamp01(t / 450).toFixed(3);
+
+  for (const sc of SC) {
+    const tl = t - sc.start;
+    const active = tl >= 0 && tl < sc.dur;
+    // Keep previous scene visible 130ms into the next for a quick exit slide.
+    const exiting = tl >= sc.dur && tl < sc.dur + 130;
+    sc.el.classList.toggle('on', active || exiting);
+    if (!(active || exiting)) continue;
+
+    let wrap = '';
+    if (exiting) {
+      const p = clamp01((tl - sc.dur) / 130);
+      sc.el.style.opacity = (1 - p).toFixed(3);
+      wrap = `translateY(${-p * 46}px)`;
+    } else {
+      sc.el.style.opacity = 1;
+      // Slow alternating camera zoom
+      const zp = clamp01(tl / sc.dur);
+      const z = sc.idx % 2 === 0 ? 1 + 0.05 * zp : 1.05 - 0.05 * zp;
+      wrap = `scale(${z.toFixed(4)})`;
+      // Punch shake on hooks
+      if (sc.style === 'hook' && tl < 300) {
+        const amp = (1 - tl / 300) * 7;
+        wrap += ` translate(${Math.sin(tl * 0.19) * amp}px, ${Math.cos(tl * 0.23) * amp}px)`;
+      }
+      for (let i = 0; i < sc.items.length; i++) styleItem(sc, sc.items[i], i, tl);
+    }
+    sc.el.style.transform = `translate(-50%,-50%) ${wrap}`;
+  }
+};
+</script>
+</body>
+</html>
