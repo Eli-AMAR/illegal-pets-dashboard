@@ -13,32 +13,41 @@ avec musique originale libre de droits (synthétisée pour ce projet). Objectif 
 | `videos/04-licence-fac.mp4` | Étudiants en Licence / fac | **LICENCE** |
 | `videos/05-trois-erreurs-bac.mp4` | Première / Terminale (spé maths) | **BAC** |
 
-## Légendes à copier-coller
+## Descriptions à copier-coller (optimisées algorithme + recherche TikTok)
+
+Recette des hashtags : **2 méga-tags** de portée (#pourtoi / #fyp) + **3-4 tags de niche**
+(là où sont vraiment les élèves) + **1 tag saisonnier** (#rentree2026, #bac2027).
+La première phrase de la description sert au SEO TikTok : elle contient les mots-clés
+que les gens tapent dans la recherche (« prof de maths », « réviser le bac »…).
 
 ### 01 — POV Polytechnique
-> Ton prof de maths a fait l'X, ENS Ulm, Chicago et la Sorbonne… et il t'explique tout simplement. Tous niveaux, de l'élémentaire à la Licence. Envoie MATHS en MP 📩
+> POV : ton prof particulier de maths a fait Polytechnique, ENS Ulm, University of Chicago et la Sorbonne 🎓 Et il t'explique tout simplement, du primaire à la Licence (remise à niveau incluse). Envoie « MATHS » en MP pour réserver 📩
 >
-> #maths #profdemaths #coursparticuliers #polytechnique #lycee #college #pourtoi
+> #pourtoi #fyp #maths #profdemaths #coursparticuliers #polytechnique #grandesecoles #rentree2026
 
 ### 02 — T'es pas nul en maths
-> T'es pas nul en maths — il te manque juste la méthode, et la logique ça s'apprend. Prof particulier formé à Polytechnique, ENS Ulm et la Sorbonne. Envoie MÉTHODE en MP 📩 Tous niveaux, du CM2 à la Licence.
+> T'es pas nul en maths, on t'a juste jamais montré la méthode 🧠 La logique, ça s'apprend — pas le par cœur. Prof particulier formé à Polytechnique, ENS Ulm et la Sorbonne, du CM2 à la Licence. Envoie « MÉTHODE » en MP 📩
 >
-> #maths #methode #coursparticuliers #college #lycee #remiseaniveau #pourtoi
+> #pourtoi #maths #ecole #college #lycee #methodedetravail #revisions #studytok
 
 ### 03 — Parents : le déclic
-> Votre enfant bloque en maths ? Ce n'est pas une fatalité — c'est presque toujours une question de méthode. Diplômé de l'École Polytechnique et de l'ENS Ulm, je donne des cours particuliers du primaire au lycée, avec patience et pédagogie. 📩 Envoyez « DÉCLIC » en MP pour réserver.
+> Votre enfant décroche en maths ? Ce n'est presque jamais une question d'intelligence — c'est une question de méthode. Diplômé de l'École Polytechnique et de l'ENS Ulm, je remets les bases en place avant la rentrée : primaire, collège, lycée. Envoyez « DÉCLIC » en MP pour réserver 📩
 >
-> #maths #coursparticuliers #soutienscolaire #parents #profdemaths #education
+> #parents #education #soutienscolaire #rentreescolaire #rentree2026 #maths #ecole #pourtoi
 
 ### 04 — La fac t'a humilié
-> La Licence, c'est un autre monde que le lycée — et ton prof doit suivre le niveau. Prof particulier de maths passé par Polytechnique, ENS Ulm et University of Chicago. Algèbre, analyse, probas : envoie LICENCE en MP 📩
+> La fac t'a humilié en maths ? Normal, la Licence c'est un autre sport 📚 Algèbre, analyse, probas : je t'explique tout simplement (parcours : Polytechnique, ENS Ulm, University of Chicago). Envoie « LICENCE » en MP avant les partiels 📩
 >
-> #maths #licence #fac #etudiant #partiels #coursparticuliers
+> #etudiant #fac #universite #licence #partiels #maths #etudessuperieures #pourtoi
 
 ### 05 — 3 erreurs au bac
-> Ces 3 erreurs coûtent des points à presque tous les lycéens — et elles se corrigent vite avec la bonne méthode. Prof particulier de maths diplômé de Polytechnique, tous niveaux. Envoie BAC en MP 📩
+> 3 erreurs qui te coûtent des points au bac de maths ❌ réviser sans annales, bâcler la rédaction, tout apprendre par cœur. On corrige ça ensemble : méthode + entraînement, avec un prof diplômé de Polytechnique. Envoie « BAC » en MP 📩
 >
-> #bac #terminale #maths #revisions #coursparticuliers #lycee
+> #bac #bac2027 #terminale #spemaths #revisions #lycee #pourtoi #studytok
+
+Astuces : les hashtags vont **dans la description** (pas en commentaire) ; alternez
+#pourtoi et #fyp d'une vidéo à l'autre pour tester ; ne dépassez pas ~8 hashtags,
+l'algorithme préfère la précision à l'accumulation.
 
 ## Conseils de publication (pour maximiser les DM)
 
