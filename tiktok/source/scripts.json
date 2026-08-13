@@ -168,10 +168,12 @@
    },
    {
     "lines": [
-     "Diplômé de **Polytechnique**",
-     "et d'**ENS Ulm**."
+     "Un professeur **formé à**",
+     "**Polytechnique**, ENS Ulm,",
+     "University of Chicago 🇺🇸",
+     "et la Sorbonne."
     ],
-    "duration_s": 2.2,
+    "duration_s": 3.0,
     "style": "credentials"
    },
    {
@@ -199,7 +201,7 @@
     "style": "cta"
    }
   ],
-  "caption": "Votre enfant bloque en maths ? Ce n'est pas une fatalité — c'est presque toujours une question de méthode. Diplômé de l'École Polytechnique et de l'ENS Ulm, je donne des cours particuliers du primaire au lycée, avec patience et pédagogie. 📩 Envoyez « DÉCLIC » en MP pour réserver.",
+  "caption": "Votre enfant bloque en maths ? Ce n'est pas une fatalité — c'est presque toujours une question de méthode. Professeur formé à Polytechnique, ENS Ulm, University of Chicago et la Sorbonne, je donne des cours particuliers du primaire au lycée, avec patience et pédagogie. 📩 Envoyez « DÉCLIC » en MP pour réserver.",
   "hashtags": [
    "#maths",
    "#coursparticuliers",
