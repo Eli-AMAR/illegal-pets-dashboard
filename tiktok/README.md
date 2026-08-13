@@ -26,7 +26,7 @@ que les gens tapent dans la recherche (« prof de maths », « réviser le bac �
 > #pourtoi #fyp #maths #profdemaths #coursparticuliers #polytechnique #grandesecoles #rentree2026
 
 ### 02 — T'es pas nul en maths
-> T'es pas nul en maths, on t'a juste jamais montré la méthode 🧠 La logique, ça s'apprend — pas le par cœur. Prof particulier formé à Polytechnique, ENS Ulm et la Sorbonne, du CM2 à la Licence. Envoie « MÉTHODE » en MP 📩
+> T'es pas nul en maths, on t'a juste jamais montré la méthode 🧠 La logique, ça s'apprend — pas le par cœur. Prof particulier formé à Polytechnique, ENS Ulm et la Sorbonne, de la primaire à la Licence. Envoie « MÉTHODE » en MP 📩
 >
 > #pourtoi #maths #ecole #college #lycee #methodedetravail #revisions #studytok
 
