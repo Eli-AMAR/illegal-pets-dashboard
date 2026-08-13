@@ -31,7 +31,7 @@ que les gens tapent dans la recherche (« prof de maths », « réviser le bac �
 > #pourtoi #maths #ecole #college #lycee #methodedetravail #revisions #studytok
 
 ### 03 — Parents : le déclic
-> Votre enfant décroche en maths ? Ce n'est presque jamais une question d'intelligence — c'est une question de méthode. Professeur formé à Polytechnique, ENS Ulm, University of Chicago et la Sorbonne, je remets les bases en place avant la rentrée : primaire, collège, lycée. Envoyez « DÉCLIC » en MP pour réserver 📩
+> Votre enfant décroche en maths ? Je peux lui apprendre la bonne méthode pour augmenter sa moyenne. Professeur formé à Polytechnique, ENS Ulm, University of Chicago et la Sorbonne — cours particuliers du primaire au lycée, avec patience et pédagogie. Envoyez « DÉCLIC » en MP pour réserver 📩
 >
 > #parents #education #soutienscolaire #rentreescolaire #rentree2026 #maths #ecole #pourtoi
 
