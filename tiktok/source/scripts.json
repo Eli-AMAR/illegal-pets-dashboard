@@ -103,9 +103,10 @@
    {
     "lines": [
      "Formé à **Polytechnique**,",
-     "ENS Ulm, la Sorbonne."
+     "ENS Ulm, la Sorbonne,",
+     "University of Chicago 🇺🇸"
     ],
-    "duration_s": 2.2,
+    "duration_s": 2.6,
     "style": "credentials"
    },
    {
@@ -125,7 +126,7 @@
     "style": "cta"
    }
   ],
-  "caption": "T'es pas nul en maths — il te manque juste la méthode, et la logique ça s'apprend. Prof particulier formé à Polytechnique, ENS Ulm et la Sorbonne. Envoie MÉTHODE en MP 📩 Tous niveaux, de la primaire à la Licence.",
+  "caption": "T'es pas nul en maths — il te manque juste la méthode, et la logique ça s'apprend. Prof particulier formé à Polytechnique, ENS Ulm, la Sorbonne et University of Chicago. Envoie MÉTHODE en MP 📩 Tous niveaux, de la primaire à la Licence.",
   "hashtags": [
    "#maths",
    "#methode",
