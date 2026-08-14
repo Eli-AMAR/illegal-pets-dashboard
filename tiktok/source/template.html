@@ -57,6 +57,26 @@
     border-radius: 999px; padding: 42px 66px; line-height: 1.05; will-change: transform, opacity;
     box-shadow: 0 0 90px var(--glow), 0 24px 60px rgba(0,0,0,.35); white-space: nowrap; }
   .pill .em { color: var(--emInk); background: none; padding: 0; }
+
+  .clabel { font: 800 46px/1.25 'Inter'; letter-spacing: .14em; text-indent: .14em;
+    color: rgba(255,255,255,.88); text-transform: uppercase; will-change: transform, opacity; }
+  .cnum { font-family: 'Archivo Black'; line-height: 1; display: flex; align-items: baseline;
+    justify-content: center; gap: 10px; will-change: transform; text-shadow: 0 12px 70px rgba(0,0,0,.5); }
+  .cnum .val { font-size: 330px; }
+  .cnum .den { font-size: 126px; color: rgba(255,255,255,.75); }
+
+  .scene.chat { width: 860px; align-items: stretch; gap: 28px; }
+  .bubble { font: 700 47px/1.28 'Inter'; padding: 32px 44px; border-radius: 42px; max-width: 660px;
+    text-align: left; will-change: transform, opacity; box-shadow: 0 16px 44px rgba(0,0,0,.30); }
+  .bubble.me { align-self: flex-end; background: var(--accent); color: var(--emInk);
+    border-bottom-right-radius: 14px; transform-origin: 90% 100%; }
+  .bubble.prof { align-self: flex-start; background: rgba(255,255,255,.10);
+    border: 2px solid rgba(255,255,255,.16); color: #fff;
+    border-bottom-left-radius: 14px; transform-origin: 10% 100%; }
+
+  #fx { position: absolute; inset: 0; pointer-events: none; }
+  #flash { position: absolute; inset: 0; pointer-events: none; opacity: 0;
+    background: radial-gradient(circle at 50% 42%, rgba(255,255,255,.95), transparent 62%); }
 </style>
 </head>
 <body>
@@ -66,6 +86,8 @@
   <canvas id="glyphs" width="1080" height="1920"></canvas>
   <div id="vignette"></div>
   <div id="sceneRoot"></div>
+  <canvas id="fx" width="1080" height="1920"></canvas>
+  <div id="flash"></div>
   <div id="kicker">COURS PARTICULIERS · MATHS</div>
   <div id="progress"><div id="progressFill"></div></div>
 </div>
@@ -80,6 +102,27 @@ const lerp = (a, b, p) => a + (b - a) * p;
 const easeOutCubic = p => 1 - Math.pow(1 - p, 3);
 const easeOutQuint = p => 1 - Math.pow(1 - p, 5);
 const easeOutBack = (p, o = 1.55) => 1 + (o + 1) * Math.pow(p - 1, 3) + o * Math.pow(p - 1, 2);
+const easeInOutCubic = p => p < 0.5 ? 4 * p * p * p : 1 - Math.pow(-2 * p + 2, 3) / 2;
+
+// red -> gold -> green, for the animated grade counter
+function ramp3(p) {
+  const A = [255, 92, 108], B = [245, 197, 66], C = [46, 230, 168];
+  const mix = (u, v, q) => u.map((x, i) => Math.round(x + (v[i] - x) * q));
+  const c = p < 0.5 ? mix(A, B, p * 2) : mix(B, C, (p - 0.5) * 2);
+  return `rgb(${c[0]},${c[1]},${c[2]})`;
+}
+
+function star(ctx, x, y, r0, alpha, color) {
+  ctx.save(); ctx.translate(x, y);
+  ctx.globalAlpha = Math.max(0, Math.min(1, alpha)); ctx.fillStyle = color;
+  ctx.beginPath();
+  for (let k = 0; k < 8; k++) {
+    const a = k * Math.PI / 4 - Math.PI / 2;
+    const rad = k % 2 === 0 ? r0 : r0 * 0.38;
+    ctx.lineTo(Math.cos(a) * rad, Math.sin(a) * rad);
+  }
+  ctx.closePath(); ctx.fill(); ctx.restore();
+}
 
 // Seeded PRNG (mulberry32) so every frame is reproducible.
 function rng(seed) { let a = seed >>> 0; return () => {
@@ -114,6 +157,35 @@ window.INIT = function (cfg) {
   SC = cfg.scenes.map((s, si) => {
     const el = document.createElement('div');
     el.className = 'scene ' + s.style;
+
+    if (s.style === 'counter') {
+      const items = [];
+      let counter = null;
+      if (s.label_top) { const d = document.createElement('div'); d.className = 'clabel'; d.textContent = s.label_top; el.appendChild(d); items.push(d); }
+      const num = document.createElement('div'); num.className = 'cnum';
+      const val = document.createElement('span'); val.className = 'val'; val.textContent = s.from;
+      const den = document.createElement('span'); den.className = 'den'; den.textContent = '/' + (s.denom || 20);
+      val.style.color = ramp3(0);
+      num.appendChild(val); num.appendChild(den); el.appendChild(num); items.push(num);
+      if (s.label_bottom) { const d = document.createElement('div'); d.className = 'clabel'; d.textContent = s.label_bottom; el.appendChild(d); items.push(d); }
+      counter = { from: s.from, to: s.to, val, num };
+      root.appendChild(el);
+      const scene = { el, items, counter, counterP: 0, style: s.style, start: t0, dur: s.duration_s * 1000, idx: si };
+      t0 += scene.dur;
+      return scene;
+    }
+    if (s.style === 'chat') {
+      const items = (s.messages || []).map(m => {
+        const b = document.createElement('div');
+        b.className = 'bubble ' + (m.side === 'me' ? 'me' : 'prof');
+        b.textContent = m.text; el.appendChild(b); return b;
+      });
+      root.appendChild(el);
+      const scene = { el, items, style: s.style, start: t0, dur: s.duration_s * 1000, idx: si };
+      t0 += scene.dur;
+      return scene;
+    }
+
     // In CTA scenes the pill is the line that carries the DM ask.
     let pillIdx = -1;
     if (s.style === 'cta') {
@@ -149,7 +221,10 @@ window.INIT = function (cfg) {
   // Fit text after DOM insertion (fonts must already be loaded by the caller).
   for (const sc of SC) {
     sc.el.classList.add('on');
-    for (const it of sc.items) fitLine(it, it.classList.contains('card') ? 900 : 920);
+    for (const it of sc.items) {
+      if (it.classList.contains('bubble') || it.classList.contains('cnum')) continue;
+      fitLine(it, it.classList.contains('card') ? 900 : 920);
+    }
     sc.el.classList.remove('on');
   }
 
@@ -187,6 +262,14 @@ function drawGlyphs(t) {
 
 function styleItem(sc, it, i, tl) {
   const style = sc.style;
+  if (it.classList.contains('bubble')) {
+    const t0b = 220 + i * 620, db = 460;
+    const pb = clamp01((tl - t0b) / db);
+    const eb = easeOutBack(pb, 1.5);
+    it.style.opacity = Math.min(1, pb * 2.5).toFixed(3);
+    it.style.transform = `translateY(${(1 - eb) * 34}px) scale(${(0.72 + 0.28 * eb).toFixed(4)})`;
+    return;
+  }
   const isPill = it.classList.contains('pill');
   let t0, d, enter;
   if (style === 'list' || style === 'credentials') { t0 = 110 + i * 270; d = 420; }
@@ -254,10 +337,51 @@ window.seek = function (ms) {
         wrap += ` translate(${Math.sin(tl * 0.19) * amp}px, ${Math.cos(tl * 0.23) * amp}px)`;
       }
       for (let i = 0; i < sc.items.length; i++) styleItem(sc, sc.items[i], i, tl);
+      if (sc.style === 'counter') updateCounter(sc, tl);
     }
     sc.el.style.transform = `translate(-50%,-50%) ${wrap}`;
   }
+
+  // Hook impact flash + ambient sparkles for key scenes
+  const act = SC.find(s => t >= s.start && t < s.start + s.dur);
+  const fl = $('#flash');
+  fl.style.opacity = (act && act.style === 'hook' && (t - act.start) < 220)
+    ? (0.30 * (1 - (t - act.start) / 220)).toFixed(3) : 0;
+  drawFX(t, act);
 };
+
+function updateCounter(sc, tl) {
+  const c = sc.counter; if (!c) return;
+  const p = clamp01((tl - 400) / (sc.dur * 0.55));
+  const vf = c.from + (c.to - c.from) * easeInOutCubic(p);
+  c.val.textContent = Math.floor(vf + 1e-6);
+  c.val.style.color = ramp3(p);
+  const frac = vf - Math.floor(vf);
+  const pulse = p >= 1 ? 1 + 0.018 * Math.sin(tl / 260) : 1 + 0.055 * (1 - frac) * (p > 0 ? 1 : 0);
+  c.num.style.transform += ` scale(${pulse.toFixed(4)})`;
+  sc.counterP = p;
+}
+
+function drawFX(t, act) {
+  const ctx = $('#fx').getContext('2d');
+  ctx.clearRect(0, 0, 1080, 1920);
+  if (!act) return;
+  const tl = t - act.start;
+  let intensity = 0, color = (CFG.palette && CFG.palette.gold) || '#F5C542';
+  if (act.style === 'credentials') intensity = clamp01(tl / 600) * 0.9;
+  else if (act.style === 'cta') { intensity = clamp01(tl / 600) * 0.7; color = CFG.palette.accent; }
+  else if (act.style === 'counter') intensity = clamp01((act.counterP - 0.85) / 0.15);
+  if (intensity <= 0.01) return;
+  const r = rng(500 + act.idx * 31);
+  for (let i = 0; i < 18; i++) {
+    const bx = 140 + r() * 800, y0 = r() * 1300, sp = 50 + r() * 110;
+    const size = 5 + r() * 9, ph = r() * Math.PI * 2, fq = 1.5 + r() * 3;
+    const y = ((y0 - sp * tl / 1000) % 1300 + 1300) % 1300 + 330;
+    const x = bx + Math.sin(tl / 1000 * 0.8 + ph) * 24;
+    const tw = 0.5 + 0.5 * Math.sin(t / 1000 * fq * 6.283 + ph);
+    star(ctx, x, y, size, intensity * (0.25 + 0.6 * tw), color);
+  }
+}
 </script>
 </body>
 </html>

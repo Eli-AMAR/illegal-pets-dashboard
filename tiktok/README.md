@@ -12,6 +12,11 @@ avec musique originale libre de droits (synthétisée pour ce projet). Objectif 
 | `videos/03-parents-declic.mp4` | Parents (primaire → lycée) | **DÉCLIC** |
 | `videos/04-licence-fac.mp4` | Étudiants en Licence / fac | **LICENCE** |
 | `videos/05-trois-erreurs-bac.mp4` | Première / Terminale (spé maths) | **BAC** |
+| `videos/06-objectif-16.mp4` ⭐ | Lycéens qui bossent sans progresser (compteur 8→16 animé) | **OBJECTIF** |
+| `videos/07-cv-de-fou.mp4` ⭐ | Large — storytime « on me traite de menteur » + DM simulé | **MATHS** |
+| `videos/08-envoie-ta-moyenne.mp4` ⭐ | Collège/lycée — engagement max (« envoie juste ton chiffre ») | **ta moyenne (un chiffre)** |
+
+⭐ = la série « best-of » : compteur de moyenne animé, conversation DM simulée, particules — à poster en priorité.
 
 ## Descriptions à copier-coller (optimisées algorithme + recherche TikTok)
 
@@ -45,9 +50,28 @@ que les gens tapent dans la recherche (« prof de maths », « réviser le bac �
 >
 > #bac #bac2027 #terminale #spemaths #revisions #lycee #pourtoi #studytok
 
+### 06 — Objectif 16 ⭐
+> Cours particuliers de maths et remise à niveau du collège à la Licence : tu bosses mais ta moyenne ne bouge pas ? Le problème, ce n'est pas toi — ce sont tes bases. Méthode d'un prof formé à Polytechnique (l'X), ENS Ulm, University of Chicago 🇺🇸 et Sorbonne Université 🇫🇷 : diagnostic, bases reconstruites, réflexes type bac. Objectif rentrée 2026, cap sur le bac 2027. Envoie « OBJECTIF » en MP 📩 — parents bienvenus.
+>
+> #maths #pourtoi #coursparticuliers #profdemaths #soutienscolaire #lycee #rentree2026 #bac2027
+
+### 07 — Le CV de fou ⭐
+> Prof de maths particulier tous niveaux, formé à Polytechnique (l'X), ENS Ulm, University of Chicago 🇺🇸 et Sorbonne Université 🇫🇷. On me traitait de menteur, alors j'ai sorti les diplômes 🎓 Le vrai flex : te rendre les maths faciles. Cours et remises à niveau du primaire à la Licence — envoie MATHS en MP 📩 et prends de l'avance pour la rentrée 2026.
+>
+> #maths #fyp #profdemaths #apprendresurtiktok #coursparticuliers #polytechnique #rentree2026 #bac2027
+
+### 08 — Envoie ta moyenne ⭐
+> Prof particulier de maths collège et lycée : ta moyenne reflète ta méthode, pas ton niveau — et une méthode, ça se change. Envoie juste ton chiffre en MP 📩, c'est le seul mot-clé (ou lâche ta moyenne en commentaire, je réponds à tout le monde). Formé à Polytechnique (l'X), ENS Ulm, University of Chicago 🇺🇸 et la Sorbonne. Remise à niveau du primaire à la Licence, créneaux rentrée 2026, objectif bac 2027.
+>
+> #maths #pourtoi #profdemaths #soutienscolaire #college #lycee #rentree2026 #bac2027
+
 Astuces : les hashtags vont **dans la description** (pas en commentaire) ; alternez
 #pourtoi et #fyp d'une vidéo à l'autre pour tester ; ne dépassez pas ~8 hashtags,
 l'algorithme préfère la précision à l'accumulation.
+
+Spécial vidéo 08 : elle est conçue pour faire commenter (les gens lâchent leur moyenne
+en commentaire). Répondez à CHAQUE commentaire dans les 2 premières heures — c'est ce
+qui la fait décoller — et utilisez « répondre par une vidéo » sur les meilleurs.
 
 ## Conseils de publication (pour maximiser les DM)
 

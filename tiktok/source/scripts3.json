@@ -1,0 +1,222 @@
+[
+ {
+  "id": "transformation",
+  "scenes": [
+   {
+    "style": "hook",
+    "duration_s": 1.7,
+    "lines": [
+     "Tu bosses.",
+     "Ta moyenne **bouge pas**."
+    ]
+   },
+   {
+    "style": "counter",
+    "duration_s": 3,
+    "from": 8,
+    "to": 16,
+    "label_top": "Ta moyenne en maths",
+    "label_bottom": "l'objectif de la méthode"
+   },
+   {
+    "style": "statement",
+    "duration_s": 1.8,
+    "lines": [
+     "Le problème ?",
+     "Pas toi.",
+     "Tes **bases**."
+    ]
+   },
+   {
+    "style": "list",
+    "duration_s": 2.4,
+    "lines": [
+     "1. Bases reconstruites 🧠",
+     "2. Plan sur mesure",
+     "3. Réflexes **type bac** 📈"
+    ]
+   },
+   {
+    "style": "credentials",
+    "duration_s": 2.4,
+    "lines": [
+     "Polytechnique 🎓",
+     "ENS Ulm",
+     "Chicago 🇺🇸 · Sorbonne 🇫🇷"
+    ]
+   },
+   {
+    "style": "cta",
+    "duration_s": 2.2,
+    "lines": [
+     "Ta **remontée** commence là.",
+     "📩 MP « OBJECTIF »"
+    ]
+   }
+  ],
+  "caption": "Cours particuliers de maths et remise à niveau du collège à la Licence : tu bosses mais ta moyenne ne bouge pas ? Le problème, ce n'est pas toi — ce sont tes bases. Méthode d'un prof formé à Polytechnique (l'X), ENS Ulm, University of Chicago 🇺🇸 et Sorbonne Université 🇫🇷 : diagnostic, bases reconstruites, réflexes type bac. Objectif rentrée 2026, cap sur le bac 2027. Envoie « OBJECTIF » en MP 📩 — parents bienvenus.",
+  "hashtags": [
+   "#maths",
+   "#pourtoi",
+   "#coursparticuliers",
+   "#profdemaths",
+   "#soutienscolaire",
+   "#lycee",
+   "#rentree2026",
+   "#bac2027"
+  ]
+ },
+ {
+  "id": "cvdefou",
+  "scenes": [
+   {
+    "style": "hook",
+    "duration_s": 1.8,
+    "lines": [
+     "On me traite de",
+     "**menteur**."
+    ]
+   },
+   {
+    "style": "statement",
+    "duration_s": 1.7,
+    "lines": [
+     "Alors j'ai sorti",
+     "les **diplômes**."
+    ]
+   },
+   {
+    "style": "credentials",
+    "duration_s": 3,
+    "lines": [
+     "Polytechnique (l'X) 🎓",
+     "ENS Ulm",
+     "University of Chicago 🇺🇸",
+     "Sorbonne Université 🇫🇷"
+    ]
+   },
+   {
+    "style": "statement",
+    "duration_s": 1.9,
+    "lines": [
+     "Le vrai flex ?",
+     "Te le rendre **facile**."
+    ]
+   },
+   {
+    "style": "chat",
+    "duration_s": 3.2,
+    "messages": [
+     {
+      "side": "me",
+      "text": "MATHS"
+     },
+     {
+      "side": "prof",
+      "text": "Bienvenue ✅ Ton niveau ?"
+     },
+     {
+      "side": "me",
+      "text": "Terminale, bac 2027 🎓"
+     }
+    ]
+   },
+   {
+    "style": "cta",
+    "duration_s": 2.4,
+    "lines": [
+     "Primaire → Licence ✅",
+     "📩 MP « MATHS »"
+    ]
+   }
+  ],
+  "caption": "Prof de maths particulier tous niveaux, formé à Polytechnique (l'X), ENS Ulm, University of Chicago 🇺🇸 et Sorbonne Université 🇫🇷. On me traitait de menteur, alors j'ai sorti les diplômes 🎓 Le vrai flex : te rendre les maths faciles. Cours et remises à niveau du primaire à la Licence — envoie MATHS en MP 📩 et prends de l'avance pour la rentrée 2026.",
+  "hashtags": [
+   "#maths",
+   "#fyp",
+   "#profdemaths",
+   "#apprendresurtiktok",
+   "#coursparticuliers",
+   "#polytechnique",
+   "#rentree2026",
+   "#bac2027"
+  ]
+ },
+ {
+  "id": "moyenne",
+  "scenes": [
+   {
+    "style": "hook",
+    "duration_s": 1.7,
+    "lines": [
+     "Moins de **12** en maths ?",
+     "Regarde bien."
+    ]
+   },
+   {
+    "style": "counter",
+    "duration_s": 3,
+    "from": 8,
+    "to": 16,
+    "label_top": "Ta moyenne",
+    "label_bottom": "l'objectif, pas la magie"
+   },
+   {
+    "style": "statement",
+    "duration_s": 1.8,
+    "lines": [
+     "Ta moyenne, c'est pas",
+     "ton niveau.",
+     "C'est ta **méthode**."
+    ]
+   },
+   {
+    "style": "credentials",
+    "duration_s": 2.2,
+    "lines": [
+     "Polytechnique (l'X) 🎓",
+     "ENS Ulm + Sorbonne 🇫🇷",
+     "Univ. of Chicago 🇺🇸"
+    ]
+   },
+   {
+    "style": "chat",
+    "duration_s": 3,
+    "messages": [
+     {
+      "side": "me",
+      "text": "8"
+     },
+     {
+      "side": "prof",
+      "text": "Reçu 🧠 On s'y met ?"
+     },
+     {
+      "side": "me",
+      "text": "Vas-y 📈"
+     }
+    ]
+   },
+   {
+    "style": "cta",
+    "duration_s": 2.5,
+    "lines": [
+     "Juste ton **chiffre**.",
+     "📩 Ta moyenne en MP",
+     "ou lâche-la en com'"
+    ]
+   }
+  ],
+  "caption": "Prof particulier de maths collège et lycée : ta moyenne reflète ta méthode, pas ton niveau — et une méthode, ça se change. Envoie juste ton chiffre en MP 📩, c'est le seul mot-clé (ou lâche ta moyenne en commentaire, je réponds à tout le monde). Formé à Polytechnique (l'X), ENS Ulm, University of Chicago 🇺🇸 et la Sorbonne. Remise à niveau du primaire à la Licence, créneaux rentrée 2026, objectif bac 2027.",
+  "hashtags": [
+   "#maths",
+   "#pourtoi",
+   "#profdemaths",
+   "#soutienscolaire",
+   "#college",
+   "#lycee",
+   "#rentree2026",
+   "#bac2027"
+  ]
+ }
+]
