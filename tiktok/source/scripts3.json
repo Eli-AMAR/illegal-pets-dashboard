@@ -38,11 +38,12 @@
    },
    {
     "style": "credentials",
-    "duration_s": 2.4,
+    "duration_s": 3.0,
     "lines": [
-     "Polytechnique 🎓",
-     "ENS Ulm",
-     "Chicago 🇺🇸 · Sorbonne 🇫🇷"
+     "Je suis un prof **formé à**",
+     "**Polytechnique**, ENS Ulm,",
+     "University of Chicago 🇺🇸",
+     "et la Sorbonne."
     ]
    },
    {
@@ -87,8 +88,9 @@
    },
    {
     "style": "credentials",
-    "duration_s": 3,
+    "duration_s": 3.4,
     "lines": [
+     "Je suis un prof **formé à**",
      "Polytechnique (l'X) 🎓",
      "ENS Ulm",
      "University of Chicago 🇺🇸",
@@ -172,8 +174,9 @@
    },
    {
     "style": "credentials",
-    "duration_s": 2.2,
+    "duration_s": 2.8,
     "lines": [
+     "Je suis un prof **formé à**",
      "Polytechnique (l'X) 🎓",
      "ENS Ulm + Sorbonne 🇫🇷",
      "Univ. of Chicago 🇺🇸"
