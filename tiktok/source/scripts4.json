@@ -1,0 +1,216 @@
+[
+ {
+  "id": "piege",
+  "scenes": [
+   {
+    "style": "hook",
+    "duration_s": 2,
+    "lines": [
+     "90% se **trompent**",
+     "sur ce calcul"
+    ]
+   },
+   {
+    "style": "quiz",
+    "duration_s": 3,
+    "equation": "-3² = ?",
+    "options": [
+     "A. 9",
+     "B. -9"
+    ]
+   },
+   {
+    "style": "statement",
+    "duration_s": 2.2,
+    "lines": [
+     "Si t'as dit **9**…",
+     "on doit parler."
+    ]
+   },
+   {
+    "style": "statement",
+    "duration_s": 2.4,
+    "lines": [
+     "Par cœur : piégé.",
+     "Compris : **imbattable**."
+    ]
+   },
+   {
+    "style": "credentials",
+    "duration_s": 3.2,
+    "lines": [
+     "Je suis un prof **formé à**",
+     "Polytechnique (l'X)",
+     "ENS Ulm",
+     "University of Chicago",
+     "Sorbonne Université"
+    ]
+   },
+   {
+    "style": "cta",
+    "duration_s": 2.6,
+    "lines": [
+     "T'es team A ou B ?",
+     "Vote en commentaire",
+     "📩 « PIÈGE » en MP"
+    ]
+   }
+  ],
+  "caption": "Combien font -3² ? Le calcul piège en maths que 90% des gens ratent. Vote A ou B en commentaire 👇 puis envoie « PIÈGE » en MP pour l'explication complète 📩 Cours et remises à niveau du primaire à la Licence, rentrée 2026.",
+  "hashtags": [
+   "#maths",
+   "#calculpiege",
+   "#profdemaths",
+   "#astucemaths",
+   "#rentree2026",
+   "#bac2027",
+   "#apprendresurtiktok",
+   "#calculmental"
+  ]
+ },
+ {
+  "id": "parents",
+  "scenes": [
+   {
+    "style": "hook",
+    "duration_s": 2.2,
+    "lines": [
+     "Votre enfant dit",
+     "« j'y arrive **pas** »"
+    ]
+   },
+   {
+    "style": "statement",
+    "duration_s": 2.4,
+    "lines": [
+     "Ce n'est pas un niveau,",
+     "c'est une **méthode**."
+    ]
+   },
+   {
+    "style": "chat",
+    "duration_s": 3,
+    "messages": [
+     {
+      "side": "me",
+      "text": "Bonjour, ma fille est en 3e, elle décroche en maths."
+     },
+     {
+      "side": "prof",
+      "text": "C'est fréquent, et ça se rattrape. On fait un bilan au 1er cours."
+     }
+    ]
+   },
+   {
+    "style": "credentials",
+    "duration_s": 3,
+    "lines": [
+     "Je suis un prof **formé à**",
+     "Polytechnique (l'X)",
+     "ENS Ulm",
+     "University of Chicago",
+     "Sorbonne Université"
+    ]
+   },
+   {
+    "style": "list",
+    "duration_s": 2.6,
+    "lines": [
+     "Primaire → Licence",
+     "Remises à niveau",
+     "Suivi **sur-mesure**"
+    ]
+   },
+   {
+    "style": "cta",
+    "duration_s": 2.8,
+    "lines": [
+     "Un bilan au 1er cours",
+     "pour votre enfant ?",
+     "📩 « BILAN » en MP"
+    ]
+   }
+  ],
+  "caption": "Prof de maths particulier pour aider votre enfant à reprendre confiance dès la rentrée 2026. Formé à Polytechnique (l'X), l'ENS Ulm, l'University of Chicago et Sorbonne Université, j'accompagne du primaire à la Licence : bases solides, méthode claire, remise à niveau sereine. Bilan au 1er cours — envoyez « BILAN » en MP 📩",
+  "hashtags": [
+   "#maths",
+   "#profdemaths",
+   "#soutienscolaire",
+   "#coursparticuliers",
+   "#rentree2026",
+   "#bac2027",
+   "#parentsdeleves",
+   "#apprendresurtiktok"
+  ]
+ },
+ {
+  "id": "rentree",
+  "scenes": [
+   {
+    "style": "hook",
+    "duration_s": 2,
+    "lines": [
+     "La rentrée se joue",
+     "**maintenant**."
+    ]
+   },
+   {
+    "style": "statement",
+    "duration_s": 2.8,
+    "lines": [
+     "L'**écart** se creuse",
+     "les 2 dernières",
+     "semaines d'août."
+    ]
+   },
+   {
+    "style": "list",
+    "duration_s": 3,
+    "lines": [
+     "1. Revoir les bases",
+     "2. Prendre de l'avance",
+     "3. Arriver **confiant**"
+    ]
+   },
+   {
+    "style": "credentials",
+    "duration_s": 3,
+    "lines": [
+     "Je suis un prof **formé à**",
+     "Polytechnique (l'X)",
+     "ENS Ulm",
+     "University of Chicago",
+     "Sorbonne Université"
+    ]
+   },
+   {
+    "style": "counter",
+    "duration_s": 2.4,
+    "from": 10,
+    "to": 15,
+    "label_top": "Ton objectif",
+    "label_bottom": "au 1er contrôle"
+   },
+   {
+    "style": "cta",
+    "duration_s": 2.6,
+    "lines": [
+     "Les créneaux d'août",
+     "partent vite.",
+     "📩 Envoie **RENTRÉE** en MP"
+    ]
+   }
+  ],
+  "caption": "Comment préparer la rentrée 2026 en maths et viser haut dès le premier contrôle ? L'écart se creuse pendant les 2 dernières semaines d'août : bases solides, avance sur le programme, confiance. Élèves et parents, envoyez « RENTRÉE » en MP 📩 Cours du primaire à la Licence.",
+  "hashtags": [
+   "#maths",
+   "#rentree2026",
+   "#soutienscolaire",
+   "#profdemaths",
+   "#bac2027",
+   "#revisions",
+   "#parents",
+   "#apprendresurtiktok"
+  ]
+ }
+]

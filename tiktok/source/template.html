@@ -74,6 +74,14 @@
     border: 2px solid rgba(255,255,255,.16); color: #fff;
     border-bottom-left-radius: 14px; transform-origin: 10% 100%; }
 
+  .qeq { font-family: 'Archivo Black'; color: #fff; line-height: 1.05; will-change: transform, opacity;
+    text-shadow: 0 8px 50px rgba(0,0,0,.5); }
+  .qeq .em { color: var(--accent); }
+  .qrow { display: flex; gap: 30px; justify-content: center; will-change: transform, opacity; }
+  .qchip { font-family: 'Archivo Black'; font-size: 62px; color: #fff; border: 4px solid var(--accent);
+    border-radius: 30px; padding: 28px 46px; background: rgba(255,255,255,.06);
+    box-shadow: 0 14px 40px rgba(0,0,0,.3); white-space: nowrap; }
+
   #fx { position: absolute; inset: 0; pointer-events: none; }
   #flash { position: absolute; inset: 0; pointer-events: none; opacity: 0;
     background: radial-gradient(circle at 50% 42%, rgba(255,255,255,.95), transparent 62%); }
@@ -174,6 +182,24 @@ window.INIT = function (cfg) {
       t0 += scene.dur;
       return scene;
     }
+    if (s.style === 'quiz') {
+      const items = [];
+      const eq = document.createElement('div'); eq.className = 'qeq';
+      eq.innerHTML = parseEm(s.equation || '');
+      const plain = (s.equation || '').replace(/\*\*/g, '');
+      eq.style.fontSize = Math.max(84, Math.min(170, 205 - 5.2 * plain.length)) + 'px';
+      el.appendChild(eq); items.push(eq);
+      const row = document.createElement('div'); row.className = 'qrow';
+      for (const o of (s.options || []).slice(0, 2)) {
+        const c = document.createElement('div'); c.className = 'qchip';
+        c.innerHTML = parseEm(o); row.appendChild(c);
+      }
+      el.appendChild(row); items.push(row);
+      root.appendChild(el);
+      const scene = { el, items, style: s.style, start: t0, dur: s.duration_s * 1000, idx: si };
+      t0 += scene.dur;
+      return scene;
+    }
     if (s.style === 'chat') {
       const items = (s.messages || []).map(m => {
         const b = document.createElement('div');
@@ -223,6 +249,11 @@ window.INIT = function (cfg) {
     sc.el.classList.add('on');
     for (const it of sc.items) {
       if (it.classList.contains('bubble') || it.classList.contains('cnum')) continue;
+      if (it.classList.contains('qrow')) { // shrink both chips together until the row fits
+        for (let k = 0; k < 30 && it.scrollWidth > 900; k++)
+          for (const ch of it.children) ch.style.fontSize = (parseFloat(getComputedStyle(ch).fontSize) * 0.95) + 'px';
+        continue;
+      }
       fitLine(it, it.classList.contains('card') ? 900 : 920);
     }
     sc.el.classList.remove('on');
@@ -262,6 +293,20 @@ function drawGlyphs(t) {
 
 function styleItem(sc, it, i, tl) {
   const style = sc.style;
+  if (it.classList.contains('qeq')) {
+    const p = clamp01((tl - 90) / 420);
+    const e = easeOutBack(p, 1.8);
+    it.style.opacity = Math.min(1, p * 2.2).toFixed(3);
+    it.style.transform = `scale(${(1.22 - 0.22 * e).toFixed(4)}) translateY(${((1 - e) * 30).toFixed(1)}px)`;
+    return;
+  }
+  if (it.classList.contains('qrow')) {
+    const p = clamp01((tl - 680) / 430);
+    const e = easeOutBack(p, 1.5);
+    it.style.opacity = Math.min(1, p * 2.4).toFixed(3);
+    it.style.transform = `translateY(${((1 - e) * 70).toFixed(1)}px) scale(${(0.9 + 0.1 * e).toFixed(4)})`;
+    return;
+  }
   if (it.classList.contains('bubble')) {
     const t0b = 220 + i * 620, db = 460;
     const pb = clamp01((tl - t0b) / db);

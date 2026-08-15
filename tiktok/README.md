@@ -16,7 +16,11 @@ avec musique originale libre de droits (synthétisée pour ce projet). Objectif 
 | `videos/07-cv-de-fou.mp4` ⭐ | Large — storytime « on me traite de menteur » + DM simulé | **MATHS** |
 | `videos/08-envoie-ta-moyenne.mp4` ⭐ | Collège/lycée — engagement max (« envoie juste ton chiffre ») | **ta moyenne (un chiffre)** |
 
-⭐ = la série « best-of » : compteur de moyenne animé, conversation DM simulée, particules — à poster en priorité.
+| `videos/09-le-calcul-piege.mp4` ⭐ | Tous — quiz « -3² = ? » qui fait exploser les commentaires | **PIÈGE** |
+| `videos/10-message-aux-parents.mp4` ⭐ | Parents (vouvoiement, chat DM parent, bilan au 1er cours) | **BILAN** |
+| `videos/11-rentree-avance.mp4` ⭐ | Urgence saisonnière : la rentrée se joue en août | **RENTRÉE** |
+
+⭐ = les séries « best-of » : compteur de moyenne animé, conversation DM simulée, quiz piège, particules — à poster en priorité.
 
 ## Descriptions à copier-coller (optimisées algorithme + recherche TikTok)
 
@@ -64,6 +68,21 @@ que les gens tapent dans la recherche (« prof de maths », « réviser le bac �
 > Prof particulier de maths collège et lycée : ta moyenne reflète ta méthode, pas ton niveau — et une méthode, ça se change. Envoie juste ton chiffre en MP 📩, c'est le seul mot-clé (ou lâche ta moyenne en commentaire, je réponds à tout le monde). Formé à Polytechnique (l'X), ENS Ulm, University of Chicago 🇺🇸 et la Sorbonne. Remise à niveau du primaire à la Licence, créneaux rentrée 2026, objectif bac 2027.
 >
 > #maths #pourtoi #profdemaths #soutienscolaire #college #lycee #rentree2026 #bac2027
+
+### 09 — Le calcul piège ⭐
+> Combien font -3² ? Le calcul piège en maths que 90% des gens ratent. Vote A ou B en commentaire 👇 puis envoie « PIÈGE » en MP pour l'explication complète 📩 Cours et remises à niveau du primaire à la Licence, rentrée 2026.
+>
+> #maths #calculpiege #profdemaths #astucemaths #rentree2026 #bac2027 #apprendresurtiktok #calculmental
+
+### 10 — Message aux parents ⭐
+> Prof de maths particulier pour aider votre enfant à reprendre confiance dès la rentrée 2026. Formé à Polytechnique (l'X), l'ENS Ulm, l'University of Chicago et Sorbonne Université, j'accompagne du primaire à la Licence : bases solides, méthode claire, remise à niveau sereine. Bilan au 1er cours — envoyez « BILAN » en MP 📩
+>
+> #maths #profdemaths #soutienscolaire #coursparticuliers #rentree2026 #bac2027 #parentsdeleves #apprendresurtiktok
+
+### 11 — La rentrée se joue maintenant ⭐
+> Comment préparer la rentrée 2026 en maths et viser haut dès le premier contrôle ? L'écart se creuse pendant les 2 dernières semaines d'août : bases solides, avance sur le programme, confiance. Élèves et parents, envoyez « RENTRÉE » en MP 📩 Cours du primaire à la Licence.
+>
+> #maths #rentree2026 #soutienscolaire #profdemaths #bac2027 #revisions #parents #apprendresurtiktok
 
 Astuces : les hashtags vont **dans la description** (pas en commentaire) ; alternez
 #pourtoi et #fyp d'une vidéo à l'autre pour tester ; ne dépassez pas ~8 hashtags,
