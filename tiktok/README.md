@@ -19,6 +19,9 @@ avec musique originale libre de droits (synthétisée pour ce projet). Objectif 
 | `videos/09-le-calcul-piege.mp4` ⭐ | Tous — quiz « -3² = ? » qui fait exploser les commentaires | **PIÈGE** |
 | `videos/10-message-aux-parents.mp4` ⭐ | Parents (vouvoiement, chat DM parent, bilan au 1er cours) | **BILAN** |
 | `videos/11-rentree-avance.mp4` ⭐ | Urgence saisonnière : la rentrée se joue en août | **RENTRÉE** |
+| `videos/12-astuce-pourcentages.mp4` ⭐ | Tous — l'astuce des % inversés (partages + enregistrements) | **ASTUCE** |
+| `videos/13-le-talent-nexiste-pas.mp4` ⭐ | Élèves découragés + parents — le mythe du « cerveau matheux » | **PROGRÈS** |
+| `videos/14-le-premier-cours.mp4` ⭐ | Hésitants — transparence : ce qui se passe au 1er cours | **DÉPART** |
 
 ⭐ = les séries « best-of » : compteur de moyenne animé, conversation DM simulée, quiz piège, particules — à poster en priorité.
 
@@ -83,6 +86,21 @@ que les gens tapent dans la recherche (« prof de maths », « réviser le bac �
 > Comment préparer la rentrée 2026 en maths et viser haut dès le premier contrôle ? L'écart se creuse pendant les 2 dernières semaines d'août : bases solides, avance sur le programme, confiance. Élèves et parents, envoyez « RENTRÉE » en MP 📩 Cours du primaire à la Licence.
 >
 > #maths #rentree2026 #soutienscolaire #profdemaths #bac2027 #revisions #parents #apprendresurtiktok
+
+### 12 — L'astuce des pourcentages ⭐
+> Comment calculer 8 % de 25 de tête, sans calculatrice ? Ton prof t'a caché l'astuce des pourcentages inversés 🤯 Regarde jusqu'au bout, enregistre pour le prochain contrôle et envoie ça à quelqu'un qui rame en calcul mental. Élèves et parents : 📩 envoyez « ASTUCE » en MP pour recevoir les suivantes.
+>
+> #maths #calculmental #astucemaths #pourcentages #apprendresurtiktok #profdemaths #college #lycee
+
+### 13 — Le talent n'existe pas ⭐
+> Comment devenir bon en maths quand on se croit nul ? Le « cerveau matheux » est un mythe : un niveau se construit avec des bases solides, une vraie façon de travailler et de la régularité. Prof formé à Polytechnique (l'X), ENS Ulm et Sorbonne Université — tous niveaux, du primaire à la Licence, remises à niveau comprises. Élèves et parents : 📩 envoyez PROGRÈS en MP.
+>
+> #maths #profdemaths #remiseaniveau #motivation #soutienscolaire #apprendresurtiktok #parents #etudiant
+
+### 14 — Le premier cours ⭐
+> Comment se passe le premier cours de maths avec un prof particulier ? Zéro exercice : d'abord un vrai diagnostic pour trouver l'origine du blocage, puis un plan sur mesure — du primaire à la Licence, remises à niveau comprises. Prof formé à Polytechnique (l'X), ENS Ulm, UChicago et la Sorbonne. Élèves et parents : 📩 envoyez DÉPART en MP pour réserver. 🎓
+>
+> #maths #profparticulier #coursparticuliers #soutienscolaire #parentsdeleves #college #lycee #apprendresurtiktok
 
 Astuces : les hashtags vont **dans la description** (pas en commentaire) ; alternez
 #pourtoi et #fyp d'une vidéo à l'autre pour tester ; ne dépassez pas ~8 hashtags,

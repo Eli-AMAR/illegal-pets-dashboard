@@ -169,13 +169,13 @@ window.INIT = function (cfg) {
     if (s.style === 'counter') {
       const items = [];
       let counter = null;
-      if (s.label_top) { const d = document.createElement('div'); d.className = 'clabel'; d.textContent = s.label_top; el.appendChild(d); items.push(d); }
+      if (s.label_top) { const d = document.createElement('div'); d.className = 'clabel'; d.innerHTML = parseEm(s.label_top); el.appendChild(d); items.push(d); }
       const num = document.createElement('div'); num.className = 'cnum';
       const val = document.createElement('span'); val.className = 'val'; val.textContent = s.from;
       const den = document.createElement('span'); den.className = 'den'; den.textContent = '/' + (s.denom || 20);
       val.style.color = ramp3(0);
       num.appendChild(val); num.appendChild(den); el.appendChild(num); items.push(num);
-      if (s.label_bottom) { const d = document.createElement('div'); d.className = 'clabel'; d.textContent = s.label_bottom; el.appendChild(d); items.push(d); }
+      if (s.label_bottom) { const d = document.createElement('div'); d.className = 'clabel'; d.innerHTML = parseEm(s.label_bottom); el.appendChild(d); items.push(d); }
       counter = { from: s.from, to: s.to, val, num };
       root.appendChild(el);
       const scene = { el, items, counter, counterP: 0, style: s.style, start: t0, dur: s.duration_s * 1000, idx: si };

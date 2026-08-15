@@ -1,0 +1,216 @@
+[
+ {
+  "id": "astuce",
+  "scenes": [
+   {
+    "style": "hook",
+    "duration_s": 1.8,
+    "lines": [
+     "Ton prof t'a **caché**",
+     "cette astuce."
+    ]
+   },
+   {
+    "style": "quiz",
+    "duration_s": 2.8,
+    "equation": "8 % de 25 = ?",
+    "options": [
+     "Euh… 😅",
+     "2"
+    ]
+   },
+   {
+    "style": "statement",
+    "duration_s": 3,
+    "lines": [
+     "Les % s'**inversent** :",
+     "8 % de 25 = 25 % de 8",
+     "Le quart de 8 = 2."
+    ]
+   },
+   {
+    "style": "chat",
+    "duration_s": 2.8,
+    "messages": [
+     {
+      "side": "me",
+      "text": "Ça marche toujours ?"
+     },
+     {
+      "side": "prof",
+      "text": "Toujours 😄"
+     },
+     {
+      "side": "prof",
+      "text": "J'en ai des dizaines."
+     }
+    ]
+   },
+   {
+    "style": "credentials",
+    "duration_s": 2.8,
+    "lines": [
+     "Je suis un prof **formé à**",
+     "Polytechnique (l'X)",
+     "ENS Ulm",
+     "University of Chicago"
+    ]
+   },
+   {
+    "style": "cta",
+    "duration_s": 2.2,
+    "lines": [
+     "Envoie ça à un ami.",
+     "📩 « ASTUCE » en MP"
+    ]
+   }
+  ],
+  "caption": "Comment calculer 8 % de 25 de tête, sans calculatrice ? Ton prof t'a caché l'astuce des pourcentages inversés 🤯 Regarde jusqu'au bout, enregistre pour le prochain contrôle et envoie ça à quelqu'un qui rame en calcul mental. Élèves et parents : 📩 envoyez « ASTUCE » en MP pour recevoir les suivantes.",
+  "hashtags": [
+   "#maths",
+   "#calculmental",
+   "#astucemaths",
+   "#pourcentages",
+   "#apprendresurtiktok",
+   "#profdemaths",
+   "#college",
+   "#lycee"
+  ]
+ },
+ {
+  "id": "talent",
+  "scenes": [
+   {
+    "style": "hook",
+    "duration_s": 1.8,
+    "lines": [
+     "On t'a **menti**",
+     "sur les maths."
+    ]
+   },
+   {
+    "style": "statement",
+    "duration_s": 2,
+    "lines": [
+     "Le « cerveau matheux »",
+     "est un **mythe**."
+    ]
+   },
+   {
+    "style": "counter",
+    "duration_s": 2.6,
+    "from": 6,
+    "to": 16,
+    "label_top": "Ton niveau n'est",
+    "label_bottom": "pas **figé**."
+   },
+   {
+    "style": "list",
+    "duration_s": 2.8,
+    "lines": [
+     "Les bases, d'abord",
+     "La méthode, ensuite",
+     "La **régularité**, toujours"
+    ]
+   },
+   {
+    "style": "credentials",
+    "duration_s": 2.8,
+    "lines": [
+     "Je suis un prof **formé à**",
+     "Polytechnique (l'X)",
+     "ENS Ulm",
+     "Sorbonne Université"
+    ]
+   },
+   {
+    "style": "cta",
+    "duration_s": 2.6,
+    "lines": [
+     "Prêt à progresser ?",
+     "📩 Envoie **PROGRÈS** en MP"
+    ]
+   }
+  ],
+  "caption": "Comment devenir bon en maths quand on se croit nul ? Le « cerveau matheux » est un mythe : un niveau se construit avec des bases solides, une vraie façon de travailler et de la régularité. Prof formé à Polytechnique (l'X), ENS Ulm et Sorbonne Université — tous niveaux, du primaire à la Licence, remises à niveau comprises. Élèves et parents : 📩 envoyez PROGRÈS en MP.",
+  "hashtags": [
+   "#maths",
+   "#profdemaths",
+   "#remiseaniveau",
+   "#motivation",
+   "#soutienscolaire",
+   "#apprendresurtiktok",
+   "#parents",
+   "#etudiant"
+  ]
+ },
+ {
+  "id": "premiercours",
+  "scenes": [
+   {
+    "style": "hook",
+    "duration_s": 2.4,
+    "lines": [
+     "Au 1er cours,",
+     "je ne donne",
+     "**aucun** exercice."
+    ]
+   },
+   {
+    "style": "statement",
+    "duration_s": 2.2,
+    "lines": [
+     "Je cherche d'où",
+     "vient le **blocage**."
+    ]
+   },
+   {
+    "style": "list",
+    "duration_s": 3,
+    "lines": [
+     "1. On parle de tes notes",
+     "2. Je teste tes bases",
+     "3. Plan sur **mesure**"
+    ]
+   },
+   {
+    "style": "statement",
+    "duration_s": 2.2,
+    "lines": [
+     "Ensuite seulement,",
+     "on **reconstruit**."
+    ]
+   },
+   {
+    "style": "credentials",
+    "duration_s": 3,
+    "lines": [
+     "Je suis un prof **formé à**",
+     "Polytechnique (l'X)",
+     "ENS Ulm",
+     "University of Chicago",
+     "Sorbonne Université"
+    ]
+   },
+   {
+    "style": "cta",
+    "duration_s": 2.8,
+    "lines": [
+     "Ton 1er cours **t'attend**.",
+     "📩 Envoie DÉPART en MP"
+    ]
+   }
+  ],
+  "caption": "Comment se passe le premier cours de maths avec un prof particulier ? Zéro exercice : d'abord un vrai diagnostic pour trouver l'origine du blocage, puis un plan sur mesure — du primaire à la Licence, remises à niveau comprises. Prof formé à Polytechnique (l'X), ENS Ulm, UChicago et la Sorbonne. Élèves et parents : 📩 envoyez DÉPART en MP pour réserver. 🎓",
+  "hashtags": [
+   "#maths",
+   "#profparticulier",
+   "#coursparticuliers",
+   "#soutienscolaire",
+   "#parentsdeleves",
+   "#college",
+   "#lycee",
+   "#apprendresurtiktok"
+  ]
+ }
+]
