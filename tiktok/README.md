@@ -22,6 +22,12 @@ avec musique originale libre de droits (synthétisée pour ce projet). Objectif 
 | `videos/12-astuce-pourcentages.mp4` ⭐ | Tous — l'astuce des % inversés (partages + enregistrements) | **ASTUCE** |
 | `videos/13-le-talent-nexiste-pas.mp4` ⭐ | Élèves découragés + parents — le mythe du « cerveau matheux » | **PROGRÈS** |
 | `videos/14-le-premier-cours.mp4` ⭐ | Hésitants — transparence : ce qui se passe au 1er cours | **DÉPART** |
+| `videos/15-quiz-priorites.mp4` ⭐ | Tous — quiz « 6 ÷ 2(1+2) », le débat qui a brisé Internet | **VERDICT** |
+| `videos/16-quiz-pourcentages.mp4` ⭐ | Tous + adultes — quiz « +50 % puis −50 % » (piège des soldes) | **SOLDES** |
+| `videos/17-astuce-fois-11.mp4` ⭐ | Tous — astuce ×11 de tête (partages/enregistrements) | **FLASH** |
+| `videos/18-astuce-carre-25.mp4` ⭐ | Tous — astuce carré des nombres en 5 (35² = 1225) | **MAGIE** |
+| `videos/19-pourquoi-tu-oublies.mp4` ⭐ | Élèves — courbe de l'oubli, rythme J+1/J+7/J+30 | **OUBLI** |
+| `videos/20-trente-minutes.mp4` ⭐ | Parents + élèves — 30 min actives > 2 h passives | **SPRINT** |
 
 ⭐ = les séries « best-of » : compteur de moyenne animé, conversation DM simulée, quiz piège, particules — à poster en priorité.
 
@@ -101,6 +107,36 @@ que les gens tapent dans la recherche (« prof de maths », « réviser le bac �
 > Comment se passe le premier cours de maths avec un prof particulier ? Zéro exercice : d'abord un vrai diagnostic pour trouver l'origine du blocage, puis un plan sur mesure — du primaire à la Licence, remises à niveau comprises. Prof formé à Polytechnique (l'X), ENS Ulm, UChicago et la Sorbonne. Élèves et parents : 📩 envoyez DÉPART en MP pour réserver. 🎓
 >
 > #maths #profparticulier #coursparticuliers #soutienscolaire #parentsdeleves #college #lycee #apprendresurtiktok
+
+### 15 — Quiz : les priorités de calcul ⭐
+> 6÷2(1+2) : le calcul de maths viral qui divise Internet, les élèves… et même les profs. Toi, t'es team A ou team B ? Vote en commentaire 👇 je ne donne pas la réponse ici. Envoie VERDICT en MP 📩 et je t'explique une fois pour toutes les priorités de calcul (et pourquoi ce débat n'en finit jamais). Prof particulier formé à Polytechnique, ENS Ulm, University of Chicago et la Sorbonne — maths du primaire à la Licence, remises à niveau élèves et parents bienvenus.
+>
+> #maths #quizmaths #prioritesdecalcul #profdemaths #soutienscolaire #apprendresurtiktok #rentree2026 #bac2027
+
+### 16 — Quiz : le piège des soldes ⭐
+> Le piège des soldes en maths : un prix fait +50 % puis −50 %, est-ce le même prix qu'avant ? Team A ou Team B ? Vote en commentaire 👇 même les adultes se trompent sur celle-là (tag un parent, ça va débattre). La réponse — et surtout le pourquoi — t'attend en MP : envoie SOLDES 📩 Prof particulier formé à Polytechnique et l'ENS Ulm, cours de maths du primaire à la Licence, remises à niveau bienvenues.
+>
+> #maths #quiz #pourcentages #soldes #profdemaths #remiseaniveau #rentree2026 #bac2027
+
+### 17 — Astuce : multiplier par 11 ⭐
+> Comment multiplier par 11 de tête en 2 secondes : l'astuce de calcul mental que l'école ne t'apprend pas. 72 × 11 sans calculatrice 🤯 teste 45 × 11 en commentaire pour voir si t'as capté 😉 et enregistre-la pour ton prochain contrôle. 📩 Envoie FLASH en MP pour les suivantes — prof formé à Polytechnique, maths du primaire à la Licence.
+>
+> #maths #calculmental #astucemaths #apprendresurtiktok #profdemaths #soutienscolaire #rentree2026 #bac2027
+
+### 18 — Astuce : le carré des nombres en 5 ⭐
+> Calcul mental rapide : le secret pour trouver le carré d'un nombre finissant par 5, sans calculatrice. 35² en 2 secondes chrono, et le tour marche à tous les coups — la démo complète est dans la vidéo. Partage à celui qui sort la calculette pour tout 😅 Élèves et parents : envoie MAGIE en MP 📩 pour la collection complète de raccourcis.
+>
+> #maths #calculmental #astucemaths #college #lycee #pourtoi #rentree2026 #bac2027
+
+### 19 — Pourquoi tu oublies tout ⭐
+> Comment réviser les maths pour ne plus rien oublier avant un contrôle : le rythme J+1, J+7, J+30. Ton cerveau efface ce qui n'est pas revu — c'est la courbe de l'oubli. La parade : 10 min à J+1, 5 min à J+7, 2 min à J+30. Enregistre cette vidéo 🔖 puis envoie « OUBLI » en MP 📩 (élèves et parents) pour installer ce rythme ensemble, du primaire à la Licence.
+>
+> #maths #revisions #memorisation #courbedeloubli #neurosciences #soutienscolaire #rentree2026 #bac2027
+
+### 20 — 30 minutes battent 2 heures ⭐
+> Mon enfant révise ses maths mais ses notes ne montent pas : voici l'erreur numéro 1. Relire n'est pas s'entraîner — dans la vidéo, la routine de 30 minutes actives à tester dès ce soir, du primaire à la Licence. Parents comme élèves : envoyez SPRINT en MP 📩 et on construit le plan de travail adapté. Prof particulier formé à Polytechnique, ENS Ulm, University of Chicago et la Sorbonne.
+>
+> #maths #parents #soutienscolaire #revisions #college #lycee #rentree2026 #bac2027
 
 Astuces : les hashtags vont **dans la description** (pas en commentaire) ; alternez
 #pourtoi et #fyp d'une vidéo à l'autre pour tester ; ne dépassez pas ~8 hashtags,

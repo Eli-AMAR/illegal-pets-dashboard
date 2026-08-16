@@ -1,0 +1,483 @@
+[
+ {
+  "id": "quizprio",
+  "scenes": [
+   {
+    "style": "hook",
+    "duration_s": 1.8,
+    "lines": [
+     "Ce calcul a",
+     "**brisé** Internet"
+    ]
+   },
+   {
+    "style": "quiz",
+    "duration_s": 3,
+    "equation": "6 ÷ 2(1+2) = ?",
+    "options": [
+     "A. 1",
+     "B. 9"
+    ]
+   },
+   {
+    "style": "statement",
+    "duration_s": 2.2,
+    "lines": [
+     "La réponse divise",
+     "même les **profs**"
+    ]
+   },
+   {
+    "style": "statement",
+    "duration_s": 2.2,
+    "lines": [
+     "Le par cœur t'a piégé",
+     "**Comprendre** change tout"
+    ]
+   },
+   {
+    "style": "credentials",
+    "duration_s": 2.5,
+    "lines": [
+     "Je suis un prof **formé à**",
+     "Polytechnique (l'X)",
+     "ENS Ulm",
+     "Sorbonne Université"
+    ]
+   },
+   {
+    "style": "cta",
+    "duration_s": 2.8,
+    "lines": [
+     "Vote A ou B 👇",
+     "📩 VERDICT en MP",
+     "pour l'explication"
+    ]
+   }
+  ],
+  "caption": "6÷2(1+2) : le calcul de maths viral qui divise Internet, les élèves… et même les profs. Toi, t'es team A ou team B ? Vote en commentaire 👇 je ne donne pas la réponse ici. Envoie VERDICT en MP 📩 et je t'explique une fois pour toutes les priorités de calcul (et pourquoi ce débat n'en finit jamais). Prof particulier formé à Polytechnique, ENS Ulm, University of Chicago et la Sorbonne — maths du primaire à la Licence, remises à niveau élèves et parents bienvenus.",
+  "hashtags": [
+   "#maths",
+   "#quizmaths",
+   "#prioritesdecalcul",
+   "#profdemaths",
+   "#soutienscolaire",
+   "#apprendresurtiktok",
+   "#rentree2026",
+   "#bac2027"
+  ]
+ },
+ {
+  "id": "quizpct",
+  "scenes": [
+   {
+    "style": "hook",
+    "duration_s": 1.6,
+    "lines": [
+     "Tu te fais avoir",
+     "aux **soldes**"
+    ]
+   },
+   {
+    "style": "statement",
+    "duration_s": 1.6,
+    "lines": [
+     "+50 %…",
+     "puis **−50 %**."
+    ]
+   },
+   {
+    "style": "quiz",
+    "duration_s": 2.8,
+    "equation": "Même prix qu'avant ?",
+    "options": [
+     "A. Oui",
+     "B. Non"
+    ]
+   },
+   {
+    "style": "chat",
+    "duration_s": 2.6,
+    "messages": [
+     {
+      "side": "me",
+      "text": "Trop facile. A !"
+     },
+     {
+      "side": "prof",
+      "text": "T'es sûr ? 😏"
+     },
+     {
+      "side": "me",
+      "text": "…Attends. 🤔"
+     }
+    ]
+   },
+   {
+    "style": "statement",
+    "duration_s": 1.8,
+    "lines": [
+     "Cette question **divise**.",
+     "Comprendre, pas réciter."
+    ]
+   },
+   {
+    "style": "credentials",
+    "duration_s": 2.2,
+    "lines": [
+     "Je suis un prof **formé à**",
+     "Polytechnique (l'X)",
+     "University of Chicago",
+     "ENS Ulm"
+    ]
+   },
+   {
+    "style": "cta",
+    "duration_s": 2.6,
+    "lines": [
+     "Team A ou Team B ? 👇",
+     "📩 Envoie SOLDES en MP",
+     "pour l'explication."
+    ]
+   }
+  ],
+  "caption": "Le piège des soldes en maths : un prix fait +50 % puis −50 %, est-ce le même prix qu'avant ? Team A ou Team B ? Vote en commentaire 👇 même les adultes se trompent sur celle-là (tag un parent, ça va débattre). La réponse — et surtout le pourquoi — t'attend en MP : envoie SOLDES 📩 Prof particulier formé à Polytechnique et l'ENS Ulm, cours de maths du primaire à la Licence, remises à niveau bienvenues.",
+  "hashtags": [
+   "#maths",
+   "#quiz",
+   "#pourcentages",
+   "#soldes",
+   "#profdemaths",
+   "#remiseaniveau",
+   "#rentree2026",
+   "#bac2027"
+  ]
+ },
+ {
+  "id": "astuce11",
+  "scenes": [
+   {
+    "style": "hook",
+    "duration_s": 1.8,
+    "lines": [
+     "72 × 11.",
+     "De **tête**.",
+     "T'as 3 secondes."
+    ]
+   },
+   {
+    "style": "quiz",
+    "duration_s": 2.8,
+    "equation": "72 × 11 = ?",
+    "options": [
+     "792",
+     "782"
+    ]
+   },
+   {
+    "style": "list",
+    "duration_s": 3,
+    "lines": [
+     "Écarte le 7 et le 2",
+     "Additionne : 7+2 = 9",
+     "Glisse le 9 au **milieu**"
+    ]
+   },
+   {
+    "style": "statement",
+    "duration_s": 2,
+    "lines": [
+     "72 × 11 = **792**",
+     "Attends… quoi ??"
+    ]
+   },
+   {
+    "style": "statement",
+    "duration_s": 1.8,
+    "lines": [
+     "Des raccourcis comme ça,",
+     "j'en ai des **dizaines**."
+    ]
+   },
+   {
+    "style": "credentials",
+    "duration_s": 2.2,
+    "lines": [
+     "Je suis un prof **formé à**",
+     "Polytechnique (l'X)",
+     "ENS Ulm",
+     "University of Chicago"
+    ]
+   },
+   {
+    "style": "cta",
+    "duration_s": 2.4,
+    "lines": [
+     "Tu veux la suite ?",
+     "📩 Envoie FLASH en MP"
+    ]
+   }
+  ],
+  "caption": "Comment multiplier par 11 de tête en 2 secondes : l'astuce de calcul mental que l'école ne t'apprend pas. 72 × 11 sans calculatrice 🤯 teste 45 × 11 en commentaire pour voir si t'as capté 😉 et enregistre-la pour ton prochain contrôle. 📩 Envoie FLASH en MP pour les suivantes — prof formé à Polytechnique, maths du primaire à la Licence.",
+  "hashtags": [
+   "#maths",
+   "#calculmental",
+   "#astucemaths",
+   "#apprendresurtiktok",
+   "#profdemaths",
+   "#soutienscolaire",
+   "#rentree2026",
+   "#bac2027"
+  ]
+ },
+ {
+  "id": "astuce25",
+  "scenes": [
+   {
+    "style": "hook",
+    "duration_s": 1.6,
+    "lines": [
+     "Ton cerveau bat",
+     "la **calculatrice**"
+    ]
+   },
+   {
+    "style": "quiz",
+    "duration_s": 2.6,
+    "equation": "35² = ?",
+    "options": [
+     "1125",
+     "1225"
+    ]
+   },
+   {
+    "style": "list",
+    "duration_s": 2.8,
+    "lines": [
+     "3 × 4 = 12",
+     "colle 25",
+     "= **1225**"
+    ]
+   },
+   {
+    "style": "list",
+    "duration_s": 2.6,
+    "lines": [
+     "Tous les nombres en 5",
+     "25² = 625",
+     "75² = **5625**"
+    ]
+   },
+   {
+    "style": "chat",
+    "duration_s": 2.4,
+    "messages": [
+     {
+      "side": "me",
+      "text": "C'est de la magie ?"
+     },
+     {
+      "side": "prof",
+      "text": "Non. Des maths 😉"
+     },
+     {
+      "side": "prof",
+      "text": "Et j'en ai plein."
+     }
+    ]
+   },
+   {
+    "style": "credentials",
+    "duration_s": 2.4,
+    "lines": [
+     "Je suis un prof **formé à**",
+     "Polytechnique (l'X)",
+     "ENS Ulm",
+     "Sorbonne Université"
+    ]
+   },
+   {
+    "style": "cta",
+    "duration_s": 2.2,
+    "lines": [
+     "D'autres tours ?",
+     "📩 Envoie **MAGIE** en MP"
+    ]
+   }
+  ],
+  "caption": "Calcul mental rapide : le secret pour trouver le carré d'un nombre finissant par 5, sans calculatrice. 35² en 2 secondes chrono, et le tour marche à tous les coups — la démo complète est dans la vidéo. Partage à celui qui sort la calculette pour tout 😅 Élèves et parents : envoie MAGIE en MP 📩 pour la collection complète de raccourcis.",
+  "hashtags": [
+   "#maths",
+   "#calculmental",
+   "#astucemaths",
+   "#college",
+   "#lycee",
+   "#pourtoi",
+   "#rentree2026",
+   "#bac2027"
+  ]
+ },
+ {
+  "id": "memoire",
+  "scenes": [
+   {
+    "style": "hook",
+    "duration_s": 2,
+    "lines": [
+     "T'avais tout compris.",
+     "T'as tout **oublié**."
+    ]
+   },
+   {
+    "style": "statement",
+    "duration_s": 1.8,
+    "lines": [
+     "C'est pas toi.",
+     "C'est ton **cerveau**."
+    ]
+   },
+   {
+    "style": "statement",
+    "duration_s": 2,
+    "lines": [
+     "La courbe de l'oubli :",
+     "non revu = **effacé**."
+    ]
+   },
+   {
+    "style": "list",
+    "duration_s": 2.8,
+    "lines": [
+     "J+1 : 10 minutes",
+     "J+7 : 5 minutes",
+     "J+30 : 2 minutes"
+    ]
+   },
+   {
+    "style": "statement",
+    "duration_s": 2,
+    "lines": [
+     "C'est le rythme qu'on",
+     "suit en cours. **Toujours**."
+    ]
+   },
+   {
+    "style": "credentials",
+    "duration_s": 2.8,
+    "lines": [
+     "Je suis un prof **formé à**",
+     "Polytechnique (l'X)",
+     "ENS Ulm",
+     "Sorbonne Université"
+    ]
+   },
+   {
+    "style": "cta",
+    "duration_s": 2.6,
+    "lines": [
+     "Enregistre 🔖",
+     "Élève ou parent :",
+     "📩 « OUBLI » en MP"
+    ]
+   }
+  ],
+  "caption": "Comment réviser les maths pour ne plus rien oublier avant un contrôle : le rythme J+1, J+7, J+30. Ton cerveau efface ce qui n'est pas revu — c'est la courbe de l'oubli. La parade : 10 min à J+1, 5 min à J+7, 2 min à J+30. Enregistre cette vidéo 🔖 puis envoie « OUBLI » en MP 📩 (élèves et parents) pour installer ce rythme ensemble, du primaire à la Licence.",
+  "hashtags": [
+   "#maths",
+   "#revisions",
+   "#memorisation",
+   "#courbedeloubli",
+   "#neurosciences",
+   "#soutienscolaire",
+   "#rentree2026",
+   "#bac2027"
+  ]
+ },
+ {
+  "id": "trentemin",
+  "scenes": [
+   {
+    "style": "hook",
+    "duration_s": 2,
+    "lines": [
+     "Il révise 2 h.",
+     "Sa note ne **bouge** pas."
+    ]
+   },
+   {
+    "style": "chat",
+    "duration_s": 2.8,
+    "messages": [
+     {
+      "side": "me",
+      "text": "Il révise 2 h par soir…"
+     },
+     {
+      "side": "prof",
+      "text": "Relecture ou exercices ?"
+     },
+     {
+      "side": "me",
+      "text": "Relecture… 😅"
+     }
+    ]
+   },
+   {
+    "style": "statement",
+    "duration_s": 2,
+    "lines": [
+     "Relire, c'est **regarder**.",
+     "Pas s'entraîner."
+    ]
+   },
+   {
+    "style": "list",
+    "duration_s": 3,
+    "lines": [
+     "10 min : exo à froid",
+     "10 min : je corrige",
+     "10 min : je refais"
+    ]
+   },
+   {
+    "style": "statement",
+    "duration_s": 1.8,
+    "lines": [
+     "30 min **actives**",
+     "> 2 h passives"
+    ]
+   },
+   {
+    "style": "credentials",
+    "duration_s": 2.8,
+    "lines": [
+     "Je suis un prof **formé à**",
+     "Polytechnique (l'X)",
+     "ENS Ulm",
+     "University of Chicago",
+     "Sorbonne Université"
+    ]
+   },
+   {
+    "style": "cta",
+    "duration_s": 2.4,
+    "lines": [
+     "On s'y met ?",
+     "📩 Envoie SPRINT en MP",
+     "Élèves & parents"
+    ]
+   }
+  ],
+  "caption": "Mon enfant révise ses maths mais ses notes ne montent pas : voici l'erreur numéro 1. Relire n'est pas s'entraîner — dans la vidéo, la routine de 30 minutes actives à tester dès ce soir, du primaire à la Licence. Parents comme élèves : envoyez SPRINT en MP 📩 et on construit le plan de travail adapté. Prof particulier formé à Polytechnique, ENS Ulm, University of Chicago et la Sorbonne.",
+  "hashtags": [
+   "#maths",
+   "#parents",
+   "#soutienscolaire",
+   "#revisions",
+   "#college",
+   "#lycee",
+   "#rentree2026",
+   "#bac2027"
+  ]
+ }
+]
